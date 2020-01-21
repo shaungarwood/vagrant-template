@@ -20,4 +20,3 @@ Vagrant.configure("2") do |config|
   #   centos.vm.hostname = "centos"
   # end
 end
-```
