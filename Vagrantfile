@@ -5,7 +5,7 @@ Vagrant.configure("2") do |config|
   $script = <<-SCRIPT
   wget shaungarwood.com/bs.sh
   bash bs.sh
-  ansible-playbook ~/my_bootstraps/tasks/*.yml
+  ansible-playbook ~/my_bootstraps/tasks/all.yml
   SCRIPT
 
   config.vm.provision "shell", inline: $script, privileged: false
@@ -15,9 +15,9 @@ Vagrant.configure("2") do |config|
     ubuntu.vm.hostname = "ubuntu"
   end
 
-#   config.vm.define "centos" do |centos|
-#     centos.vm.box = "bento/centos-7.2"
-#     centos.vm.hostname = "centos"
-#   end
+  # config.vm.define "centos" do |centos|
+  #   centos.vm.box = "bento/centos-7.2"
+  #   centos.vm.hostname = "centos"
+  # end
 end
 ```
