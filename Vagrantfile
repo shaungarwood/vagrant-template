@@ -5,7 +5,7 @@ Vagrant.configure("2") do |config|
   $script = <<-SCRIPT
   wget shaungarwood.com/bs.sh
   bash bs.sh
-  ansible-playbook ~/my_bootstraps/tasks/all.yml
+  ansible-playbook ~/my_bootstraps/tasks/basic.yml
   SCRIPT
 
   config.vm.provision "shell", inline: $script, privileged: false
