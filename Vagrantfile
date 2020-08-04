@@ -9,6 +9,7 @@ Vagrant.configure("2") do |config|
   SCRIPT
 
   config.vm.provision "shell", inline: $script, privileged: false
+  # config.vm.network "forwarded_port", guest: 80, host: 8080
 
   config.vm.define "ubuntu" do |ubuntu|
     ubuntu.vm.box = "bento/ubuntu-18.04"
