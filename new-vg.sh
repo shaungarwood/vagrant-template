@@ -12,5 +12,5 @@ boxname="$1"
 mkdir ../$boxname
 cp ./Vagrantfile ../$boxname/
 
-sed -i "s/\"ubuntu\"/\"$boxname\"/" ../$boxname/Vagrantfile
-sed -i "s/\"centos\"/\"$boxname\"/" ../$boxname/Vagrantfile
+sed -i -e "s/\"ubuntu\"/\"$boxname\"/" ../$boxname/Vagrantfile
+sed -i -e "s/\"centos\"/\"$boxname\"/" ../$boxname/Vagrantfile
