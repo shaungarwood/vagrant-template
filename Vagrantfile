@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
   # config.vm.network "forwarded_port", guest: 80, host: 8080
 
   # config.vm.define "ubuntu" do |ubuntu|
-  #   ubuntu.vm.box = "bento/ubuntu-18.04"
+  #   ubuntu.vm.box = "bento/ubuntu-20.04"
   #   ubuntu.vm.hostname = "ubuntu"
   # end
 
